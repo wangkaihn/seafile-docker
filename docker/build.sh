@@ -121,7 +121,7 @@ index 0b40098..a569b94 100644
 
  # Compress static files(css, js)
  COMPRESS_ENABLED = False
-" | patch -p1 && pip install -r requirements.txt || exit 1
+" | patch -p1 && pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple || exit 1
 
 #mv $WORK_DIR/seahub-${SEAFILE_VERSION}-server/ /usr/local/share/seahub
 mkdir -p /usr/local/share/seafile
