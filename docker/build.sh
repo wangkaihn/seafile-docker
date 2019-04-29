@@ -56,7 +56,7 @@ cd $WORK_DIR
 [ -z "$uUID" ] && uUID=2016
 [ -z "$uGID" ] && uGID=2016
 
-
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 ################################
 # Install some needed packages #
 ################################
