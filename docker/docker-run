@@ -44,11 +44,12 @@ cd $HOME
 #########################
 
 start_seafile_server() {
-	if [ "$SEAHUB" == "fastcgi" ]; then
-		seafile-admin start --fastcgi
-	else
+	#if [ "$SEAHUB" == "fastcgi" ]; then
+	#	seafile-admin start --fastcgi
+	#else
 		seafile-admin start
-	fi
+		echo "seafile-admin is running..."
+	#fi
 }
 
 stop_seafile() {
